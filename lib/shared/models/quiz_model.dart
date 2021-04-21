@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:DevQuiz/core/app_images.dart';
-import 'package:DevQuiz/shared/models/answer_model.dart';
-import 'package:DevQuiz/shared/models/question_model.dart';
+import 'package:dev_Quiz/core/app_images.dart';
+import 'package:dev_Quiz/shared/models/answer_model.dart';
+import 'package:dev_Quiz/shared/models/question_model.dart';
 import 'package:flutter/material.dart';
 
 enum Level { facil, medio, dificil, perito }

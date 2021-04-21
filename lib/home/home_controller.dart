@@ -1,10 +1,10 @@
-import 'package:DevQuiz/core/app_images.dart';
-import 'package:DevQuiz/home/home_repository.dart';
-import 'package:DevQuiz/home/home_state.dart';
-import 'package:DevQuiz/shared/models/answer_model.dart';
-import 'package:DevQuiz/shared/models/question_model.dart';
-import 'package:DevQuiz/shared/models/quiz_model.dart';
-import 'package:DevQuiz/shared/models/user_model.dart';
+import 'package:dev_Quiz/core/app_images.dart';
+import 'package:dev_Quiz/home/home_repository.dart';
+import 'package:dev_Quiz/home/home_state.dart';
+import 'package:dev_Quiz/shared/models/answer_model.dart';
+import 'package:dev_Quiz/shared/models/question_model.dart';
+import 'package:dev_Quiz/shared/models/quiz_model.dart';
+import 'package:dev_Quiz/shared/models/user_model.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomeController {

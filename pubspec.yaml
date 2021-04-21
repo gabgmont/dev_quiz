@@ -1,5 +1,5 @@
-name: DevQuiz
-description: DevQuiz - Gabul DEV
+name: dev_Quiz
+description: Rocketseat NLW 05 - Gabriel Monteiro
 version: 1.0.0+1
 
 environment:

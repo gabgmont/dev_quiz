@@ -1,4 +1,4 @@
-import 'package:DevQuiz/core/app_widget.dart';
+import 'package:dev_Quiz/core/app_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
