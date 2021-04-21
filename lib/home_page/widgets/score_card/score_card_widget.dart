@@ -1,5 +1,5 @@
 import 'package:DevQuiz/core/core.dart';
-import 'package:DevQuiz/widgets/chart/chart_widget.dart';
+import 'package:DevQuiz/home_page/widgets/chart/chart_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,10 +12,11 @@ class ScoreCardWidget extends StatelessWidget {
         height: 136,
         decoration: BoxDecoration(
           color: AppColors.white,
+          border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(24.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

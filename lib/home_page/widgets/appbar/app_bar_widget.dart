@@ -1,6 +1,7 @@
+import 'package:DevQuiz/core/app_colors.dart';
 import 'package:DevQuiz/core/app_gradients.dart';
 import 'package:DevQuiz/core/app_text_styles.dart';
-import 'package:DevQuiz/widgets/score_card/score_card_widget.dart';
+import 'package:DevQuiz/home_page/widgets/score_card/score_card_widget.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppBarWidget extends PreferredSize {
@@ -37,7 +38,7 @@ class AppBarWidget extends PreferredSize {
                         width: 58,
                         height: 58,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(23),
                             image: DecorationImage(
                               image: NetworkImage(
                                   'https://avatars.githubusercontent.com/u/57967676?v=4'),
