@@ -9,55 +9,65 @@ class QuizCardWidget extends StatelessWidget {
   final String image;
   final String progress;
   final double percent;
+  final VoidCallback onTap;
 
   const QuizCardWidget({
     Key? key,
     required this.title,
     required this.image,
     required this.progress,
+    required this.onTap,
     this.percent = 0,
+
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
-          color: AppColors.white,
-          borderRadius: BorderRadius.circular(10)),
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 40,
-              width: 40,
-              child: Image.asset('assets/images/$image.png'),
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            Text(
-              title,
-              style: AppTextStyles.heading15,
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            Row(
+    return Material(
+      borderRadius: BorderRadius.circular(10),
+      color: AppColors.white,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(10),
+        onTap: onTap,
+        child: Container(
+          decoration: BoxDecoration(
+              border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
+              borderRadius: BorderRadius.circular(10)),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: Text(progress),
-                  flex: 2,
+                Container(
+                  height: 40,
+                  width: 40,
+                  child: Image.asset('assets/images/$image.png'),
                 ),
-                Expanded(
-                  flex: 3,
-                  child: LinearProgressIndicatorWidget(value: percent),
+                SizedBox(
+                  height: 16,
+                ),
+                Text(
+                  title,
+                  style: AppTextStyles.heading15,
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(progress),
+                      flex: 2,
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: LinearProgressIndicatorWidget(value: percent),
+                    ),
+                  ],
                 ),
               ],
             ),
-          ],
+          ),
         ),
       ),
     );
