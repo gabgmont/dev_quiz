@@ -1,4 +1,4 @@
-name: dev_Quiz
+name: dev_quiz
 description: Rocketseat NLW 05 - Gabriel Monteiro
 version: 1.0.0+1
 
@@ -10,6 +10,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   google_fonts: ^2.0.0
+  share_plus: ^2.0.1
 
 dev_dependencies:
   flutter_test:

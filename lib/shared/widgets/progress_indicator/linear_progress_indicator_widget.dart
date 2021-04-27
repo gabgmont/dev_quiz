@@ -1,4 +1,4 @@
-import 'package:dev_Quiz/core/app_colors.dart';
+import 'package:dev_quiz/core/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class LinearProgressIndicatorWidget extends StatelessWidget {

@@ -1,7 +1,5 @@
-import 'dart:ffi';
 
-import 'package:dev_Quiz/core/app_colors.dart';
-import 'package:dev_Quiz/core/app_images.dart';
+import 'package:dev_quiz/core/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -43,6 +41,14 @@ class NextButtonWidget extends StatelessWidget {
   NextButtonWidget.white({required String label, required VoidCallback onTap})
       : this.backGroundColor = AppColors.white,
         this.fontColor = AppColors.grey,
+        this.borderColor = AppColors.border,
+        this.overlayColor = AppColors.border,
+        this.onTap = onTap,
+        this.label = label;
+
+  NextButtonWidget.purple({required String label, required VoidCallback onTap})
+      : this.backGroundColor = AppColors.purple,
+        this.fontColor = AppColors.white,
         this.borderColor = AppColors.border,
         this.overlayColor = AppColors.border,
         this.onTap = onTap,
